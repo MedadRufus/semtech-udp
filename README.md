@@ -10,3 +10,10 @@ asynchronous send function which returns only when the transmit ack (tx_ack) is 
 
 The `client` feature provides a Tokio-based runtime which handles the UDP and Semtech UDP protocol details, such as
 periodically sending PULL_DATA frames. Client is responsible for ACKing downlinks.
+
+
+# Usage
+To run the server, run the following command:
+```bash
+cargo run --example server --features="server"
+```
